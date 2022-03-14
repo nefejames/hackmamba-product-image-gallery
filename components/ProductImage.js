@@ -12,7 +12,7 @@ export default function ProductImage({ gallery, thumbsSwiper }) {
         {gallery?.map((item) => (
           <SwiperSlide
             key={`product-gallery-${item.id}`}
-            className="selection:bg-transparent flex justify-center items-center"
+            className="flex justify-center items-center"
           >
             <Image
               src={item.imgUrl}
