@@ -1,23 +1,17 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "./Slider";
 
-const galleryCarouselBreakpoints = {
-  320: {
-    slidesPerView: 4,
-  },
-};
-
 export default function CarouselThumbs({ gallery, setThumbsSwiper }) {
   return (
     <div className="max-w-md mt-5 lg:mt-8 mx-auto relative lg:pb-2">
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={20}
+        slidesPerView={4}
         watchSlidesProgress={true}
         freeMode={true}
         observer={true}
         observeParents={true}
-        breakpoints={galleryCarouselBreakpoints}
       >
         {gallery?.map((item) => (
           <SwiperSlide
