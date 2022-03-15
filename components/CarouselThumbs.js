@@ -3,15 +3,6 @@ import { Swiper, SwiperSlide } from "./Slider";
 
 const galleryCarouselBreakpoints = {
   320: {
-    slidesPerView: 2,
-  },
-  480: {
-    slidesPerView: 3,
-  },
-  640: {
-    slidesPerView: 3,
-  },
-  800: {
     slidesPerView: 4,
   },
 };
