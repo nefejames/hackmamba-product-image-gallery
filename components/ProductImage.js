@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide, Navigation, Thumbs } from "./Slider";
 
-export default function ImageContainer({ gallery, thumbsSwiper }) {
+export default function ProductImage({ gallery, thumbsSwiper }) {
   return (
     <div className="relative">
       <Swiper

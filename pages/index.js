@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import CarouselThumbs from "@components/CarouselThumbs";
-import ImageContainer from "@components/ImageContainer";
+import ProductImage from "@components/ProductImage";
 
 const gallery = [
   { id: 1, imgUrl: "/images/Bed-1.webp" },
@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ImageContainer gallery={gallery} thumbsSwiper={thumbsSwiper} />
+      <ProductImage gallery={gallery} thumbsSwiper={thumbsSwiper} />
       <CarouselThumbs gallery={gallery} setThumbsSwiper={setThumbsSwiper} />
     </div>
   );
